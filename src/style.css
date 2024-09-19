@@ -1,0 +1,136 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 2.5rem; 
+}
+
+p {
+    font-size: 1.2rem; 
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem; 
+    }
+
+    p {
+        font-size: 1rem; 
+    }
+    body{
+        overflow: visible;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem; 
+    }
+
+    p {
+        font-size: 0.9rem; 
+    }
+    .mulher{
+        display: none;
+    }
+}
+
+.menu {
+    background-color: lightgray;
+    position: fixed;
+    padding-left: 15px;
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+}
+
+.menu-mobile {
+    display: none; 
+}
+
+.menu-pc {
+    display: flex; 
+    gap: 30px;
+    padding-right: 100px;
+}
+
+
+@media (max-width: 768px) {
+    .menu-mobile {
+        display: flex; 
+        flex-direction: column;
+        height: 30px; 
+        overflow: hidden;
+    }
+
+    .menu-pc {
+        display: none; 
+    }
+}
+
+
+#IMC{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: lightgray;
+
+    height: 100vh;
+    width: 100vw;
+}
+
+#Hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+
+    height: 100vh;
+    width: 100vw;
+}
+#Hero div p{
+    width: 50vw;
+}
+#Hero img{
+    height: 100vh;
+}
+
+#Exercicios {
+    background-image: url("https://img.freepik.com/fotos-gratis/atletico-homem-praticando-esporte-ao-ar-livre_23-2148196926.jpg?w=1060&t=st=1726780661~exp=1726781261~hmac=fe8cb1d9c93e35c7f810ad448fd3c8f4df4917570ca58c5924983f472b8e4a4c");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    color: white;
+
+    height: 100vh;
+    width: 100vw;
+}
+
+#Exercicios p {
+    width: 40vw;
+}
+
+#Exercicios div {
+    padding-left: 150px;
+}
+
+
+@media (max-width: 768px) {
+    #Exercicios div {
+        padding-left: 20px; 
+    }
+}
+
+

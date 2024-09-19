@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuidados Pessoais</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+    <main>
+        <header class="menu">
+            <p >Cuidados Pessoais</p>
+            <nav id="menu-pc">
+                <ul class="menu-pc">
+                    <li>
+                        <a href="#Hero">Início</a>
+                    </li>
+                    <li>
+                        <a href="#IMC">Calcular IMC</a>
+                    </li>
+                    <li>
+                        <a href="#Exercicios">Exercicios</a>
+                    </li>
+                </ul>
+            </nav>
+            
+            <nav class="menu-mobile" id="menuMobile">
+                <button onclick="expandir()">
+                    <img width="25" height="25" src="https://img.icons8.com/ios/50/menu-squared-2.png" alt="menu-squared-2" />
+                </button>
+                <ul>
+                    <li>
+                        <a href="#Hero" onclick="recolherMenu()">Início</a>
+                    </li>
+                    <li>
+                        <a href="#IMC" onclick="recolherMenu()">IMC</a>
+                    </li>
+                    <li>
+                        <a href="#Exercicios" onclick="recolherMenu()">Exercícios</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <section id="Hero">
+            <div>
+                <h1>Cuidados Pessoais</h1>
+                <p>Descubra o poder do autocuidado com ferramentas para auxiliar na sua jornada. Nossas funcionalidades são simples de usar e proporcionam soluções em cada detalhe do seu dia.</p>
+            </div>
+            <img class="mulher" src="https://img.freepik.com/fotos-gratis/mulher-em-forma-de-tiro-completo-correndo-ao-ar-livre_23-2150255850.jpg?w=360&t=st=1726777139~exp=1726777739~hmac=0e40aef0023ff4c8663164d56d73ebdc6f8fb709b8fd2b19eef015e5bda64234" alt="mulher correndo">
+        </section>
+        <section id="IMC">
+            <div>
+                <h2>Calculadora de IMC</h2>
+                <p>Calcule seu Índice de Massa Corporal (IMC) de forma rápida e simples!</p>
+            </div>
+            <form action="" onsubmit="calcularIMC(event)">
+                <div>
+                    <label for="name">Seu peso (kg): </label>
+                    <input type="text" name="peso" id="peso" required />
+                </div>
+                <div>
+                    <label for="name">Sua altura (m): </label>
+                    <input type="text" name="altura" id="altura" required />
+                </div>
+                <input type="submit" value="Clcular IMC">
+            </form>
+            <p id="saida"></p>
+        </section>
+        <section id="Exercicios">
+            <div>
+                <h2>Porque devo praticar exercicios?</h2>
+                <p>Praticar exercícios melhora a saúde física e mental, ajudando a prevenir doenças, aumentar a energia, e melhorar o humor. Além disso, fortalece músculos e ossos, melhora a qualidade do sono e promove bem-estar geral, contribuindo para uma vida mais equilibrada e saudável.</p>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
