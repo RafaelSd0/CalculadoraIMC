@@ -28,16 +28,17 @@ let menuExpansivo = false;
 function expandir() {
     const menuMobile = document.getElementById('menuMobile');
     if (!menuExpansivo) {
-        menuMobile.style.height = '110px'; // Expande o menu
+        menuMobile.style.height = '110px'; 
         menuExpansivo = true;
     } else {
-        menuMobile.style.height = '30px'; // Recolhe o menu
+        menuMobile.style.height = '30px'; 
         menuExpansivo = false;
     }
 }
 
 function recolherMenu() {
     const menuMobile = document.getElementById('menuMobile');
-    menuMobile.style.height = '30px'; // Recolhe o menu
-    menuExpansivo = false; // Reseta o estado do menu
+    menuMobile.style.height = '30px'; 
+    menuExpansivo = false; 
 }
+
